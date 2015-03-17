@@ -1,0 +1,17 @@
+<% content_for(:title, "Edit") %>
+
+<h1>Edit <%= @unit.title %></h1>
+
+<% if !(@unit.subjects.nil?) %>
+  <% @unit.subjects.each do |subject| %>
+  <li><%= subject.title %></li>
+    <%= link_to "Edit", edit_unit_subject_path(@unit, subject) %>
+    <ul>
+      <% @unit.subjects.each do |subject| %>
+      <%= subject.title %>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>
+
+<%= link_to "add a subject", new_unit_subject_path(@unit) %>

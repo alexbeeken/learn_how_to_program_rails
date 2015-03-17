@@ -1,0 +1,7 @@
+<h3> Create a new subject </h3>
+
+<%= form_for [@unit, @subject] do |f| %>
+<%= f.label :title %>
+<%= f.text_field :title %>
+<p><%= f.submit %></p>
+<% end %>

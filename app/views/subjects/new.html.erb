@@ -1,0 +1,16 @@
+<h1>New Subject for <%= @unit.title %></h1>
+
+<% if @subject.errors.any? %>
+<h3>Please try again:</h3>
+<ul>
+  <% @subject.errors.full_messages.each do |message| %>
+  <li><%= message %></li>
+  <% end %>
+</ul>
+<% end %>
+
+<%= form_for [@unit, @subject] do |f| %>
+<%= f.label :title %>
+<%= f.text_field :title %>
+<%= f.submit %>
+<% end %>

@@ -1,0 +1,15 @@
+<h1>Units</h1>
+
+<ul>
+<% @units.each do |unit| %>
+  <li><%= unit.title %></li>
+    <%= link_to "Edit", edit_unit_path(unit) %>
+      <ul>
+        <% @unit.subjects.each do |subject| %>
+          <%= subject.title %>
+        <% end %>
+      </ul>
+<% end %>
+</ul>
+
+<%= render 'form' %>
