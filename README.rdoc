@@ -1,28 +1,32 @@
-== README
+Learn How to Program Clone
+===============
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an app that was created for educational purposes, to practice building websites in Rails. It is a clone of www.LearnHowToProgram.com.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+1. You can also clone this repository with `git clone http://github.com/alexbeeken/learn_how_to_program_rails`.
 
-* System dependencies
+2. Navigate to it's directory on your local machine and run `bundle`.
 
-* Configuration
+3. Run `rake db:create` and `rake db:migrate`.
 
-* Database creation
+4. Run `rails server`.
 
-* Database initialization
+5. Open a browser and go to `localhost:3000`.
 
-* How to run the test suite
+## Contributing
 
-* Services (job queues, cache servers, search engines, etc.)
+1. Fork it!
 
-* Deployment instructions
+2. Follow installation instructions to see it running.
 
-* ...
+3. Make changes.
 
+4. Commit.
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+5. Submit a pull request.
+
+## License
+
+MIT
